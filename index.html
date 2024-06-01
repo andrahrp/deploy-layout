@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+   <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+            <section class="card-container" >
+          <article class="card-filtering">
+        </section>
+        
+<main class="total-section">
+    <section class="card-container">
+        <article class="card">
+            <h3>Total Revenue</h3>
+            <p>$1,000,000</p>
+        </article>
+        <article class="card">
+            <h3>Total Customers</h3>
+            <p>10,000</p>
+        </article>
+        <article class="card">
+            <h3>Total Products</h3>
+            <p>500</p>
+        </article>
+        <article class="card">
+            <h3>Total Orders</h3>
+            <p>25,000</p>
+        </article>
+    </section>
+</main>
+
+    <main class="dashboard-container">
+        <section class="dashboard-left">
+            <article class="left-box large">
+                <h2>Sum of Revenue</h2>
+                <canvas id="sumOfRevenue"></canvas>
+            </article>
+            <article class="left-box large">
+                <h2>Revenue by Country</h2>
+                <canvas id="pieSegment"></canvas>
+            </article>
+            <article class="left-box large">
+                <h2>Average Revenue</h2>
+                <canvas id="avgRevenue"></canvas>
+            </article>
+        </section>
+
+        <section class="dashboard-right">
+            <article class="right-box large">
+                <h2>Monthly Revenue</h2>
+                <canvas id="monthlyRevenue"></canvas>
+            </article>
+            <article class="right-box large">
+                <h2>Top Product Categories</h2>
+                <canvas id="topProductCategory"></canvas>
+            </article>
+            <article class="right-box large">
+                <h2>Revenue by Continent</h2>
+                <canvas id="monthlyRevenueByContinent"></canvas>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dashboard Inc.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script/scriptChart.js"></script>
+</body>
+</html>
